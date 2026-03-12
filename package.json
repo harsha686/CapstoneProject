@@ -1,0 +1,39 @@
+{
+  "name": "securevote-root",
+  "version": "1.0.0",
+  "description": "SecureVote - Indian Smart Voting System Root Package",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "start": "./quick-start.sh",
+    "stop": "./stop-all.sh",
+    "status": "./status.sh",
+    "start-backend": "./start-backend.sh",
+    "start-frontend": "./start-frontend.sh",
+    "start-face": "./start-face-service.sh",
+    "install-all": "npm run install-backend && npm run install-frontend && npm run install-face",
+    "install-backend": "cd backend && mvn clean install",
+    "install-frontend": "cd frontend && npm install",
+    "install-face": "cd face_recognition && pip3 install -r requirements.txt",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && mvn test"
+  },
+  "keywords": [
+    "voting",
+    "election",
+    "facial-recognition",
+    "spring-boot",
+    "react",
+    "india",
+    "secure-voting"
+  ],
+  "author": "SecureVote Team",
+  "license": "Educational",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/securevote/securevote"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
